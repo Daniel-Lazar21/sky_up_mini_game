@@ -1,0 +1,33 @@
+achievements pe langa cele normale de la dificultate
+1) 10 50 100 250 500 la toate deodata gen 
+2) de cate ori ai sarit in total in joc cam 5 achievements acolo
+3) de cate ori ai facut wallY jumps ....
+4)string achievements test : '00000000000000000000000000000000000'
+5) CONTINUA CU TEXT PENTRU A ARATA PE ECRAN CA NU ARE DEBLOCATA CULOAREA SI NU-L LASA SA JOACE
+   MUTA SI CHESTIA CU SELECT PLAYER COLOR MAI SUS CA SA AI LOC DE TEXT-UL ACELA 
+6) fa ceva mai eficient la platforme efectiv uitate daca se misca paltforms[-1] la right sau left ca sa poti
+controla mai bine comportamentul randomizarii
+
+7) fa un field in care sa scrie ei ce ar vrea sa modifici la joc si sa poata da send direct la tine in mail.
+
+
+FIX ME : FA SFX UL DIN MENIU CU CEL DIN GAME SA SE COMPLETEZE UNUL PE CELALAT!!!!!!!!!!!!!!!!!
+
+
+
+
+1.1 IDEI : upside-down-mode 
+rotated_screen = pygame.transform.rotate(self.screen, 180)
+screen.blit(rotated_screen,(0,0))  
+
+
+TODO : twist-mania-mode:
+#cu asta rotesti ecranul in jurul propriului sau centru in functie de angle
+sau stii tu cum faci doar sa l invarti la 180
+rotated_screen = self.screen.get_rect()
+rotated_screen = pygame.transform.rotate(self.screen, self.angle)
+roatted_screen_rect = rotated_screen.get_rect(center=(self.screen.get_width() // 2, self.screen.get_height() // 2))
+screen.blit(rotated_screen,roatted_screen_rect)    
+###########
+custom colors sa fie un array unde player-ul sa poata salva cateva custom colors facute de el
+si sa poata da select sau delete la fiecare in parte 
